@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f8;
+    color: #1f2933;
+}
+
+nav {
+    background-color: #0b3d4a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #67d5d2;
+}
+
+.hero {
+    background: linear-gradient(120deg, #0b3d4a, #1c7c7a);
+    color: white;
+    padding: 100px 8%;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.small-title {
+    color: #67d5d2;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 22px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #67d5d2;
+    color: #0b3d4a;
+    padding: 12px 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    width: 84%;
+    margin: 35px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h1, h2 {
+    color: #0b3d4a;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card, .project {
+    background-color: #eef8f8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.project span {
+    display: inline-block;
+    background-color: #0b3d4a;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px 5px 0 0;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #eef8f8;
+    padding: 15px;
+    margin: 12px 0;
+    border-left: 6px solid #67d5d2;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    section {
+        width: 85%;
+    }
+}

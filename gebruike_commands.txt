@@ -1,0 +1,42 @@
+Gebruikte commando's tijdens het maken van mijn portfolio
+
+docker compose up --build -d
+Start de 3 containers (frontend, backend en mongo).
+De --build zorgt ervoor dat Docker alles opnieuw opbouwt.
+
+docker ps
+Toont welke containers momenteel actief zijn.
+
+docker ps -a
+Toont alle containers, ook degene die gestopt zijn.
+
+docker logs be
+Hiermee heb ik gekeken waarom mijn backend niet werkte.
+Je ziet foutmeldingen en meldingen van de server.
+
+docker logs mongo
+Toont informatie van de MongoDB container.
+
+docker exec -it mongo mongosh
+Hiermee ben ik in MongoDB gegaan om mijn database te bekijken.
+
+use portfolioDB
+Selecteert mijn database.
+
+show databases
+Toont alle databases die aanwezig zijn.
+
+show collections
+Toont alle collecties in de huidige database.
+
+db.skills.find()
+Toont alle gegevens uit de skills collectie.
+
+db.projects.find()
+Toont alle gegevens uit de projects collectie.
+
+docker compose down
+Stopt alle containers.
+
+docker compose up -d
+Start alle containers opnieuw.
